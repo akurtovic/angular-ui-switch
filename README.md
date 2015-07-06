@@ -1,16 +1,12 @@
 # [angular](https://angularjs.org/)-ui-switch
 
-This is a simple iOS 7 style switch directive for AngularJS. You can use this module as you would use the default HTML checkbox input element. This is a super lightweight module and you can completely change the design using just CSS.
+## Note 
+This is a re-styled fork of Kristijan Sedlak's angular-ui-switch directive.
+The repo for the original project is here: https://github.com/xpepermint/angular-ui-switch
 
-Supported by all modern browsers: Chrome, Firefox, Opera, Safari, IE8+
-
-![YoomJS](https://raw.githubusercontent.com/xpepermint/angular-ui-switch/master/logo.png)
-
-Inspired by [switchery](https://github.com/abpetkov/switchery) - in angular way.
+![YoomJS](http://i.imgur.com/IfpsZOi.jpg)
 
 ## Installation
-
-Download the package from `github`. The package is also available over `npm install angular-ui-switch` or `bower install angular-ui-switch`.
 
 Include `javascript` and `css` files into your page.
 
@@ -39,7 +35,7 @@ Insert the switch in your html template.
 
 ```html
 <form>
-  <switch id="enabled" name="enabled" ng-model="enabled" class="green"></switch>
+  <switch id="enabled" name="enabled" ng-model="enabled"></switch>
   <br>{{ enabled }}
 </form>
 ```
@@ -47,7 +43,7 @@ Insert the switch in your html template.
 Add optional on/off text
 ```html
 <form>
-  <switch id="enabled" name="enabled" ng-model="enabled" on="On" off="Off" class="green"></switch>
+  <switch id="enabled" name="enabled" ng-model="enabled" on="On" off="Off"></switch>
   <br>{{ enabled }}
 </form>
 ```
@@ -71,10 +67,6 @@ You can completely change the design. All the magic is hidden inside two CSS cla
 }
 ```
 
-## Publishing
+## Minify
 
-1. Update version in `package.json` and `bower.json`.
-
-2. Run `make compile` to minify files.
-
-3. Run `make publish` to publish.
+1. Run `make compile` to minify files.
